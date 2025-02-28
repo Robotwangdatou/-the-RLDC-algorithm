@@ -72,7 +72,7 @@ if __name__ == '__main__':
             for train_index, test_index in kfold.split(X, y):
                 X_train, X_test = X.iloc[train_index], X.iloc[test_index]
                 y_train, y_test = y.iloc[train_index], y.iloc[test_index]
-                # 初始化存储不同截距下占比的DataFrame
+                # Initialize a DataFrame to store the proportions under different intercepts
                 x_train1 = pd.DataFrame(index=X_train.index)
                 x_test1 = pd.DataFrame(index=X_test.index)
 
